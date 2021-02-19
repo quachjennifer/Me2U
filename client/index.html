@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>power-input demo</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>PowerInput Demo</h1>
+      <div>
+        <form class="pure-form pure-form-aligned">
+          <fieldset>
+            <div class="pure-control-group">
+              <label for="name">Username</label>
+              <input id="name" type="text" placeholder="Username" />
+            </div>
+
+            <div class="pure-control-group">
+              <label for="password">Password</label>
+              <input
+                class="pure-input-1-2"
+                id="password"
+                type="password"
+                placeholder="Password"
+              />
+            </div>
+
+            <div class="pure-control-group">
+              <label for="email">Message</label>
+              <textarea
+                class="pure-input-1-2 message"
+                placeholder="Textareas work too"
+              ></textarea>
+            </div>
+
+            <div class="pure-controls">
+              <button type="submit" class="pure-button pure-button-primary">
+                Submit
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <div class="mask"></div>
+    <script src="src/test.js"></script>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, Jumbotron, Container} from "react-bootstrap";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import ParticlesBg from 'particles-bg'
 
@@ -21,6 +21,10 @@ class Home extends React.Component {
     this.getSelectedValue2 = this.getSelectedValue2.bind(this);
     //this.getSubmitForm= this.getSubmitForm.bind(this);
     this.onButtonPressed=this.onButtonPressed.bind(this);
+
+
+    // new button
+    this.onButtonPressed1=this.onButtonPressed1.bind(this);
   }
   
 
@@ -47,6 +51,12 @@ class Home extends React.Component {
     this.props.handleChange(this.state.selectedA, this.state.selectedB);
   }
 
+  onButtonPressed1() {
+    this.props.history.push('/login');
+  }
+
+  
+
   render() {
     return(
       
@@ -55,8 +65,8 @@ class Home extends React.Component {
         
         <Jumbotron fluid>
           <Container color="white">
-            <h1>ZINDER</h1>  
-            <p>Do the stars align?</p>
+            <h1>ME 2 U</h1>  
+            <p>a delivery application</p>
     <p>{this.props.tank}</p>
     <p>{this.props.zodiac}</p>
           </Container>
@@ -106,6 +116,8 @@ class Home extends React.Component {
 
         <div className ="text-center" >
         <Button variant="warning" class="mx-auto" onClick={this.onButtonPressed}>Submit </Button>
+
+        <Button variant="warning" class="mx-auto" onClick={this.onButtonPressed1}>Test </Button>
 
         {/* <Button variant="success" class="mx-auto" onClick={this.onButtonPressed} >Who is the zodiac killer?</Button> */}
         

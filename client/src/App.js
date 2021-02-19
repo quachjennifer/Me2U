@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, useHistory, Switch} from "react-router-dom";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Home from './Home';
 import Results from './result'
+import Login from './login'
 
 class App extends React.Component {
   // Initialize the state here in the parent component so it can be shared with child components (Home/Results)
@@ -32,6 +33,8 @@ class App extends React.Component {
           </Route> 
 
         <Route path='/result' exact component={() => <Results zodiac1={this.state.zodiac1} zodiac2={this.state.zodiac2}/>}/>  
+
+        <Route path='/login' exact component = {() => <Login/>} />
      </Switch>
 
 

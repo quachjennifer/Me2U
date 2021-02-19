@@ -2,7 +2,7 @@ import React from 'react';
 import data from './data.json';
 import {Button} from "react-bootstrap";
 import {useHistory} from "react-router-dom"
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import ParticlesBg from 'particles-bg'
 import Container from 'react-bootstrap/Container'
