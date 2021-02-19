@@ -48,9 +48,6 @@ class App extends React.Component {
 
     
       );
-      // return <Home value={value} onChange={handleChange} />;
     }
   }
 export default App;
-
-// hello world
