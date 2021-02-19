@@ -48,7 +48,7 @@ class Home extends React.Component {
     return(
       <div id="app">
         <ParticlesBg type="circle" bg={true} />
-        <img src={logo} alt="Logo" />
+        <img src={logo} class="logo" alt="Logo" />
         <div>
           <form class="pure-form pure-form-aligned">
             <fieldset>

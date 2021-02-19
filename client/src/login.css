@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body {
@@ -27,18 +27,18 @@ body {
   fieldset {
     border: none;
   }
-  
+
   #app {
     padding: 32px 16px;
     width: fit-content;
     background-color: #eee;
     border-radius: 50px;
   }
-  
+
   .message {
     color: #ff0000;
   }
-  
+
   .mask {
     background-color: rgba(0, 0, 0, 0.65);
     width: 100%;

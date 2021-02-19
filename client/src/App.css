@@ -106,3 +106,7 @@ body {
   left: 16px;
   top: 16px;
 }
+
+.logo {
+  max-width: 90vw;
+}
