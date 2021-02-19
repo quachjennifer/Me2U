@@ -1,11 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, useHistory, Switch} from "react-router-dom";
+import { BrowserRouter as Router, Route, useHistory, Switch, useRouteMatch} from "react-router-dom";
 
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Home from './Home';
-import Results from './result'
-import Login from './login'
+import Login from './login';
+import Send from './send';
+import Payment from './payment';
+import Car from './car';
 
 class App extends React.Component {
   // Initialize the state here in the parent component so it can be shared with child components (Home/Results)
@@ -13,7 +15,7 @@ class App extends React.Component {
     super(props);
 
      this.state = {
-      zodiac1: "",
+      name: "",
       zodiac2: "" 
      }
 
@@ -21,8 +23,7 @@ class App extends React.Component {
   }
 
   handleChange(value1, value2) {
-    this.setState({zodiac1: value1});
-    this.setState({zodiac2: value2});
+    this.setState({name: value1});
   }
 
   render() {
@@ -32,14 +33,20 @@ class App extends React.Component {
         <Route exact path='/' exact component={routeProps => <Home {...routeProps} handleChange={this.handleChange} />}>
           </Route> 
 
-        <Route path='/result' exact component={() => <Results zodiac1={this.state.zodiac1} zodiac2={this.state.zodiac2}/>}/>  
 
-        <Route path='/login' exact component = {() => <Login/>} />
+        <Route path='/login' exact component = {() => <Login name ={this.state.name}/>} />
+        
+        <Route path='/send' exact component = {() => <Send /> } />
+
+        <Route path='/payment' exact component = {() => <Payment /> } />
+
+        <Route path='/car' exact component = {() => <Car /> } />
      </Switch>
 
 
       </Router>
 
+    
       );
       // return <Home value={value} onChange={handleChange} />;
     }

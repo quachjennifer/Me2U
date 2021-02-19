@@ -1,62 +1,60 @@
 import React from 'react';
-import data from './data.json';
 import {Button} from "react-bootstrap";
 import {useHistory} from "react-router-dom"
 //import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
 import ParticlesBg from 'particles-bg'
-import Container from 'react-bootstrap/Container'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
+
 
 
 import "./login.css";
 
 
 class Login extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      selectedA: null 
+    };
+
+    this.onButtonPressed1=this.onButtonPressed1.bind(this);
+    this.onButtonPressed2=this.onButtonPressed2.bind(this);
+
+  }
+
+    onButtonPressed1() {
+      this.props.history.push('/send');
+
+    }
+
+  onButtonPressed2() {
+    this.props.history.push('/receive');
+  }
   
     render() {
         return (
+          <div> <a id= 'Button' class="btn btn-primary" role="button" href='./'>Back</a> 
+    
             <div id="app">
+              
                 <ParticlesBg type="circle" bg={true} />
-      <h1>Login</h1>
+      <h1>Welcome {this.props.name}</h1>
+      <h2>Would you like to send or receive a gram?</h2>
+      <h2>All fundings will go to charity</h2>
       <div>
         <form class="pure-form pure-form-aligned">
-          <fieldset>
-            <div class="pure-control-group">
-              <label for="name">Username</label>
-              <input id="name" type="text" placeholder="Username" />
-            </div>
+        <a id= 'Send' class="btn btn-primary" role="button" href='/send'>Send</a>
+        <a id = 'Receive' class="btn btn-primary" role="button" href='/car'>Receive</a>
+        
 
-            <div class="pure-control-group">
-              <label for="password">Password</label>
-              <input
-                class="pure-input-1-2"
-                id="password"
-                type="password"
-                placeholder="Password"
-              />
-            </div>
-
-            <div class="pure-control-group">
-              <label for="email">Message</label>
-              <textarea
-                class="pure-input-1-2 message"
-                placeholder="Textareas work too"
-              ></textarea>
-            </div>
-
-            <div class="pure-controls">
-              <button type="submit" class="pure-button pure-button-primary">
-                Submit
-              </button>
-
-              <Button variant="warning" href="/" >Try Again</Button>
-            </div>
-          </fieldset>
         </form>
+
+
       </div>
+      
     </div>
+    </div>
+    
+    
         )
     }
   }

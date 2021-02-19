@@ -1,19 +1,36 @@
+:root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 body {
     font-family: sans-serif;
   }
 
   h1 {
-    color:rgba(228, 48, 48, 0.65)
+    margin: 0;
+    padding: 12px;
+    color:rgba(228, 48, 48, 0.65);
+
+  }
+
+  h2 {
+    color:rgba(0, 0, 0, 0.65)
   }
 
   label {
-    color:rgba(197, 74, 74, 0.65)
+    color:rgba(197, 74, 74, 0.65);
+  }
+
+  fieldset {
+    border: none;
   }
   
   #app {
-    margin: 300px auto;
-    width: 90%;
-    padding: 90[x];
+    padding: 32px 16px;
+    width: fit-content;
     background-color: #eee;
     border-radius: 50px;
   }
