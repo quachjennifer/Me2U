@@ -68,7 +68,7 @@ class Home extends React.Component {
                   placeholder="Password"
                 />
               </div>
-              <Button variant="warning" class="mx-auto" onClick={this.onButtonPressed1}>Login</Button>
+              <Button class="mx-auto login" onClick={this.onButtonPressed1}>Login</Button>
             </fieldset>
           </form>
         </div>

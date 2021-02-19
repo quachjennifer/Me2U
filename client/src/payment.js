@@ -19,7 +19,7 @@ class Payment extends React.Component {
           return (
             <div>
               <a id= 'Back' class="btn btn-primary back-button" role="button" href='/login'>Back</a>
-              <div class="container">
+              <div id="app">
                 <ParticlesBg type="circle" bg={true} />
                 <div id="Checkout" class="inline">
                   <h1>Pay Invoice</h1>
