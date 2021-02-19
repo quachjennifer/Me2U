@@ -43,7 +43,7 @@
 .jumbotron
 {
   background: none
- 
+
 }
 
 .jumbotron.Container.h1
@@ -99,4 +99,10 @@ body {
   box-sizing: border-box;
   border-color: white;
   border-style: outset;
+}
+
+.back-button {
+  position: fixed;
+  left: 16px;
+  top: 16px;
 }

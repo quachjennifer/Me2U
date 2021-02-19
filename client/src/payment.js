@@ -18,7 +18,7 @@ class Payment extends React.Component {
       render() {
           return (
             <div>
-              <a id= 'Back' class="btn btn-primary" role="button" href='/login'>Back</a>
+              <a id= 'Back' class="btn btn-primary back-button" role="button" href='/login'>Back</a>
               <div class="container">
                 <ParticlesBg type="circle" bg={true} />
                 <div id="Checkout" class="inline">

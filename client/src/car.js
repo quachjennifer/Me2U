@@ -12,15 +12,15 @@ class Car extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-          selectedA: null 
+          selectedA: null
         };
-    
+
       }
       render() {
           return (
-            <div> 
-            <a id= 'Back' class="btn btn-primary" role="button" href='/login'>Back</a> 
-              
+            <div>
+            <a id= 'Back' class="btn btn-primary back-button" role="button" href='/login'>Back</a>
+
               <div id="app">
                   <ParticlesBg type="cobweb" bg={true} />
         <h1>Gift is on the Way!</h1>
@@ -29,7 +29,7 @@ class Car extends React.Component {
         <div>
           <form class="pure-form pure-form-aligned">
           <div id="button1"></div>
-  
+
           </form>
         </div>
       </div>

@@ -29,7 +29,7 @@ class Login extends React.Component {
     render() {
         return (
           <div>
-            <a id= 'Button' class="btn btn-primary" role="button" href='./'>Back</a>
+            <a id= 'Button' class="btn btn-primary back-button" role="button" href='./'>Back</a>
             <div id="app">
               <ParticlesBg type="circle" bg={true} />
               <h1>Welcome {this.props.name}</h1>

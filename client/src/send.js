@@ -12,14 +12,14 @@ class Send extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-          selectedA: null 
+          selectedA: null
         };
-    
+
       }
       render() {
           return (
-            <div> 
-                <a id= 'Back' class="btn btn-primary" role="button" href='/login'>Back</a> 
+            <div>
+                <a id= 'Back' class="btn btn-primary back-button" role="button" href='/login'>Back</a>
             <div id="app">
       <ParticlesBg type="circle" bg={true} />
 <h1>Mail</h1>
@@ -88,13 +88,13 @@ class Send extends React.Component {
     <input id="pickupdate" type="text"/>
   </div>
 
-  
+
   <a id= 'Payment' class="btn btn-primary" role="button" href='/payment'>Payment</a>
 
   <div class="pure-controls">
-        
 
-    
+
+
   </div>
 </fieldset>
 </form>
